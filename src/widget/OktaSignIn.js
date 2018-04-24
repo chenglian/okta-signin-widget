@@ -171,7 +171,8 @@ var OktaSignIn = (function () {
       url: options.baseUrl,
       transformErrorXHR: Util.transformErrorXHR,
       headers: {
-        'X-Okta-User-Agent-Extended': 'okta-signin-widget-' + config.version
+        'X-Okta-User-Agent-Extended': 'okta-signin-widget-' + config.version,
+        'Accept-Language': options.language
       },
       clientId: options.clientId,
       redirectUri: options.redirectUri
